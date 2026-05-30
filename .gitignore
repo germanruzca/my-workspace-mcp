@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# OAuth credentials (should be in ~/.my_workspace_mcp/ but just in case)
+credentials/
+*.json
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

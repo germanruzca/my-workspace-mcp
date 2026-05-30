@@ -1,0 +1,6 @@
+fastmcp==2.14.7
+google-auth==2.40.1
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+google-api-python-client==2.170.0
+httplib2==0.22.0
