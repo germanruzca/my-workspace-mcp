@@ -21,8 +21,7 @@ Connect N Gmail, Calendar, Drive, and Tasks accounts simultaneously from Claude 
 
 1. Go to [Google Cloud Console → APIs & Services → Credentials](https://console.cloud.google.com/apis/credentials).
 2. Create an **OAuth 2.0 Client ID** → Application type: **Web application**.
-3. Add `http://localhost:8000/oauth/callback` to **Authorized redirect URIs**.
-4. Note your **Client ID** and **Client Secret**.
+3. Note your **Client ID** and **Client Secret**.
 5. Add the email addresses you want to use under **Test users** (OAuth consent screen → Test users) while the app is in *Testing* mode.
 
 ---
@@ -148,11 +147,8 @@ Create a task "Review PR" in my default list for me@gmail.com.
 
 ## Troubleshooting
 
-**Port 8000 already in use during OAuth**  
-Change `OAUTH_PORT` in `config.py` and update the redirect URI in Google Cloud Console.
-
 **Token expired / invalid**  
 Call `revoke_account(user_google_email)` then trigger any tool to re-authenticate.
 
 **"Access blocked: This app's request is invalid"**  
-Make sure `http://localhost:8000/oauth/callback` is in your OAuth client's redirect URIs and the account is listed as a test user.
+Make sure the account is listed as a test user on the OAuth consent screen.
