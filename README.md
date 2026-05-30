@@ -8,7 +8,7 @@ Connect N Gmail, Calendar, Drive, and Tasks accounts simultaneously from Claude 
 ## Prerequisites
 
 - Python 3.11+
-- A Google Cloud project with an OAuth 2.0 **Web application** credential
+- A Google Cloud project with an OAuth 2.0 **Desktop app** credential
 - The following APIs enabled in your Cloud project:
   - Gmail API
   - Google Calendar API
@@ -20,9 +20,9 @@ Connect N Gmail, Calendar, Drive, and Tasks accounts simultaneously from Claude 
 ## 1 — Google Cloud setup
 
 1. Go to [Google Cloud Console → APIs & Services → Credentials](https://console.cloud.google.com/apis/credentials).
-2. Create an **OAuth 2.0 Client ID** → Application type: **Web application**.
+2. Create an **OAuth 2.0 Client ID** → Application type: **Desktop app**.
 3. Note your **Client ID** and **Client Secret**.
-5. Add the email addresses you want to use under **Test users** (OAuth consent screen → Test users) while the app is in *Testing* mode.
+4. Add the email addresses you want to use under **Test users** (OAuth consent screen → Test users) while the app is in *Testing* mode.
 
 ---
 
@@ -136,7 +136,7 @@ List my connected accounts.
 
 Search unread emails for me@gmail.com.
 
-Show my calendar events for work@company.com this week (time_min="2024-06-03T00:00:00Z", time_max="2024-06-07T23:59:59Z").
+Show my calendar events for work@company.com this week (time_min="2026-06-02T00:00:00Z", time_max="2026-06-06T23:59:59Z").
 
 Search Drive files containing "Q2 report" for me@gmail.com.
 
